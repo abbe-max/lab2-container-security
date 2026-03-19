@@ -34,6 +34,12 @@ Hardened Pod blev **ALLOWED with 1 warnings**. Varningen gällde att default ser
 - policies/require-team-label.yaml
 
 ## Screenshots
+### Trivy före hardening
+![Trivy före hardening](screenshots/trivy-before.png)
+![Trivy före hardening](screenshots/trivy-before1.png)
+### Trivy efter hardening
+![Trivy efter hardening](screenshots/trivy-after.png)
+![Trivy efter hardening](screenshots/trivy-after1.png)
 
 ### Gatekeeper Bad Pod
 ![Gatekeeper Bad Pod](screenshots/gatekeeper-badpod.png)
