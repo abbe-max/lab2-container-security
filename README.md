@@ -34,18 +34,19 @@ Hardened Pod blev **ALLOWED with 1 warnings**. Varningen gällde att default ser
 - policies/require-team-label.yaml
 
 ## Screenshots
+
 ### Trivy före hardening
 ![Trivy före hardening](screenshots/trivy-before.png)
-![Trivy före hardening](screenshots/trivy-before1.png)
+
 ### Trivy efter hardening
 ![Trivy efter hardening](screenshots/trivy-after.png)
-![Trivy efter hardening](screenshots/trivy-after1.png)
 
-### Gatekeeper Bad Pod
-![Gatekeeper Bad Pod](screenshots/gatekeeper-badpod.png)
+### Gatekeeper deny
+![Gatekeeper deny](screenshots/gatekeeper-deny.png)
 
-### Gatekeeper Hardened Pod
-![Gatekeeper Hardened Pod](screenshots/gatekeeper-hardenedpod.png)
+### Gatekeeper pass
+![Gatekeeper pass](screenshots/gatekeeper-pass.png)
+
 
 ## Reflektion
 Jag lärde mig att container-säkerhet börjar redan i Dockerfile. En äldre basimage och gamla paket kan ge många sårbarheter direkt. Det gjorde stor skillnad att använda en mindre och modernare image. Att köra containern som non-root minskar risken om den skulle bli komprometterad. SBOM är viktigt eftersom det visar vilka komponenter som finns i imagen och gör det lättare att förstå vad som behöver uppdateras. Gatekeeper är användbart eftersom policies kan upptäcka och stoppa osäkra konfigurationer innan resurser används i Kubernetes.
