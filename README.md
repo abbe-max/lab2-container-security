@@ -19,7 +19,8 @@ Gatekeeper testades i Mission Control.
 Bad Pod blev **DENIED by Gatekeeper**. Den stoppades bland annat för att containern var privileged, saknade CPU- och memory-limits, saknade livenessProbe och readinessProbe, använde latest-tag, otillåtet registry, default service account och flera viktiga säkerhetsinställningar.
 
 ### Hardened Pod
-Lägg in resultatet här från ditt test av Hardened Pod.
+Hardened Pod blev **ALLOWED with 1 warnings**. Varningen gällde att default service account användes:
+`[no-default-sa] Using the default service account is not allowed`
 
 ## Viktiga filer
 - Dockerfile.vulnerable

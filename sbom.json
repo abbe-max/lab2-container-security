@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:7a1b7d6c-3013-40b8-a029-45156b15cc86",
+  "serialNumber": "urn:uuid:5a61dfb0-3f2a-4add-b6bd-6ddb511fdeb3",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-03-19T09:36:14+00:00",
+    "timestamp": "2026-03-19T09:47:08+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "a4285f8a-d67b-4bd5-a139-1acdb94a0e3c",
+      "bom-ref": "2f175556-c074-4fae-afe4-d0e4b6685277",
       "type": "container",
       "name": "my-app:hardened",
       "properties": [
@@ -81,7 +81,7 @@
   },
   "components": [
     {
-      "bom-ref": "4f4746c3-ab17-493c-9a38-4f3877ec5421",
+      "bom-ref": "67c7d11d-44d8-42d3-9478-eafaa5f6ad95",
       "type": "operating-system",
       "name": "debian",
       "version": "12.13",
@@ -7642,7 +7642,21 @@
   ],
   "dependencies": [
     {
-      "ref": "4f4746c3-ab17-493c-9a38-4f3877ec5421",
+      "ref": "2f175556-c074-4fae-afe4-d0e4b6685277",
+      "dependsOn": [
+        "67c7d11d-44d8-42d3-9478-eafaa5f6ad95",
+        "pkg:pypi/blinker@1.9.0",
+        "pkg:pypi/click@8.3.1",
+        "pkg:pypi/flask@3.0.0",
+        "pkg:pypi/itsdangerous@2.2.0",
+        "pkg:pypi/jinja2@3.1.6",
+        "pkg:pypi/markupsafe@3.0.3",
+        "pkg:pypi/pip@25.0.1",
+        "pkg:pypi/werkzeug@3.1.6"
+      ]
+    },
+    {
+      "ref": "67c7d11d-44d8-42d3-9478-eafaa5f6ad95",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.13",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.13",
@@ -7685,20 +7699,6 @@
         "pkg:deb/debian/sysvinit-utils@3.06-4?arch=amd64&distro=debian-12.13",
         "pkg:deb/debian/tzdata@2025b-0%2Bdeb12u2?arch=all&distro=debian-12.13",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.13"
-      ]
-    },
-    {
-      "ref": "a4285f8a-d67b-4bd5-a139-1acdb94a0e3c",
-      "dependsOn": [
-        "4f4746c3-ab17-493c-9a38-4f3877ec5421",
-        "pkg:pypi/blinker@1.9.0",
-        "pkg:pypi/click@8.3.1",
-        "pkg:pypi/flask@3.0.0",
-        "pkg:pypi/itsdangerous@2.2.0",
-        "pkg:pypi/jinja2@3.1.6",
-        "pkg:pypi/markupsafe@3.0.3",
-        "pkg:pypi/pip@25.0.1",
-        "pkg:pypi/werkzeug@3.1.6"
       ]
     },
     {
